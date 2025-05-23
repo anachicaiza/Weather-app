@@ -15,22 +15,25 @@
   <body>
     <div class="container">
       <header>
-        <input
-          placeholder="Enter a city..."
-          type="search"
-          class="search-input"
-          required
-        />
-        <input type="submit" class="button-input" value="Search" />
+        <form id="search-form">
+          <input
+            placeholder="Enter a city..."
+            type="search"
+            class="search-input"
+            id="search-input"
+            required
+          />
+          <input type="submit" class="button-input" value="Search" />
+        </form>
       </header>
       <main>
         <div class="current-weather">
           <div class="">
-            <h1 class="current-city">San Francisco</h1>
+            <h1 class="current-city" id="current-city">San Francisco</h1>
             <p class="current-details">
               Thursday 16:14, few clouds<br />
-              Humidity: <strong class="details-info">77%</strong>, Wind:
-              <strong class="details-info">8.75km/h</strong>
+              Humidity: <strong>77%</strong>, Wind:
+              <strong>8.75km/h</strong>
             </p>
           </div>
           <div class="current-temperature">
@@ -48,5 +51,6 @@
         </p>
       </footer>
     </div>
+    <script src="src/script.js"></script>
   </body>
 </html>
