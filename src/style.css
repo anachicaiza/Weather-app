@@ -63,7 +63,7 @@ main {
   line-height: 24px;
 }
 
-.details-info {
+.current-details strong {
   color: #f65282;
 }
 
@@ -73,9 +73,9 @@ main {
 
 .current-icon {
   position: relative;
-  top: -8;
+  top: -10px;
   font-size: 40px;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 .current-value {
   font-size: 80px;
