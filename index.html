@@ -32,17 +32,24 @@
           <div class="">
             <h1 class="current-city" id="current-city">San Francisco</h1>
             <p class="current-details">
-              <span id="current-date">Thursday 16:14</span>, few clouds<br />
-              Humidity: <strong>77%</strong>, Wind:
-              <strong>8.75km/h</strong>
+              <span id="current-date"></span>, <span id="description"></span
+              ><br />
+              Humidity: <span><strong id="humidity"></strong></span>, Wind:
+              <span><strong id="wind"></strong></span>
             </p>
           </div>
           <div class="current-temperature">
-            <span class="current-icon">☀️</span
-            ><span class="current-value" id="current-value">13</span
-            ><span class="current-unit">°C</span>
+            <div id="icon">
+              <img
+                class="current-icon"
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+              />
+            </div>
+            <div class="current-value" id="current-value">13</div>
+            <div class="current-unit">°C</div>
           </div>
         </div>
+        <div class="weather-forecast" id="forecast"></div>
       </main>
       <footer>
         <p>

@@ -2,6 +2,19 @@ function showTemperature(response) {
   let temperatureElement = document.querySelector("#current-value");
   let temperature = Math.round(response.data.temperature.current);
   let cityElement = document.querySelector("#current-city");
+  let icon = document.querySelector("#icon");
+  let descriptionElement = document.querySelector("#description");
+  let description = response.data.condition.description;
+  let windElement = document.querySelector("#wind");
+  let wind = `${response.data.wind.speed}km/h`;
+  let humidityElement = document.querySelector("#humidity");
+  let humidity = `${response.data.temperature.humidity}%`;
+
+  humidityElement.innerHTML = humidity;
+  windElement.innerHTML = wind;
+  descriptionElement.innerHTML = description;
+  icon.innerHTML = `<img
+  src="${response.data.condition.icon_url}" class="current-icon" />`;
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
 }
@@ -32,11 +45,11 @@ function formatDay(date) {
   ];
 
   if (minutes < 10) {
-    minutes = `0${minutes};`;
+    minutes = `0${minutes}`;
   }
 
   if (hours < 10) {
-    hours = `0${hours};`;
+    hours = `0${hours}`;
   }
 
   let formattedDay = days[day];
