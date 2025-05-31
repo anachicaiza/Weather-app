@@ -32,10 +32,11 @@
           <div class="">
             <h1 class="current-city" id="current-city">San Francisco</h1>
             <p class="current-details">
-              <span id="current-date"></span>, <span id="description"></span
-              ><br />
-              Humidity: <span><strong id="humidity"></strong></span>, Wind:
-              <span><strong id="wind"></strong></span>
+              <span id="current-date"></span>,
+              <span id="description">broken clouds</span><br />
+              Humidity: <span><strong id="humidity">79%</strong></span
+              >, Wind:
+              <span><strong id="wind">1.79km/h</strong></span>
             </p>
           </div>
           <div class="current-temperature">
@@ -49,7 +50,20 @@
             <div class="current-unit">°C</div>
           </div>
         </div>
-        <div class="weather-forecast" id="forecast"></div>
+        <div class="weather-forecast" id="forecast">
+          <div class="weather-forecast-day">
+            <div class="forecast-date">Tue</div>
+            <div>
+              <img sr="${day.condition.icon_url}" class="forecast-icon" />
+            </div>
+            <div class="forecast-temperatures">
+              <div class="forecast-temperature">
+                <strong>18ºC</strong>
+              </div>
+              <div class="forecast-temperature">9ºC</div>
+            </div>
+          </div>
+        </div>
       </main>
       <footer>
         <p>

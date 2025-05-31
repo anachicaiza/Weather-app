@@ -103,8 +103,10 @@ main {
 }
 
 .forecast-icon {
-  text-align: center;
-  font-size: 30px;
+  display: block;
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
 }
 
 .forecast-temperatures {
